@@ -5,6 +5,7 @@ import NavBar2 from "@/Component/Navbar2";
 import NewArrivals from "../NewArive";
 import { Divider } from "antd";
 import StepsComponent from "../StepsComponent";
+import Exploring from "../Exploring";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <NewArrivals />
       <Divider />
       <StepsComponent />
+      <Exploring />
 
       {/* <NavBar2 /> */}
     </div>
