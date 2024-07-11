@@ -1,0 +1,92 @@
+/* styles.module.css */
+.card {
+    width: 100%;
+    max-width: 390px;
+    height: 34vh;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(236, 236, 236, 0.466);
+
+}
+
+.card1 {
+    width: 100%;
+    max-width: 390px;
+    height: 34vh;
+    background-color: rgba(243, 204, 204, 0.589);
+
+}
+
+.card2 {
+    width: 100%;
+    max-width: 390px;
+    height: 34vh;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(174, 248, 211, 0.534);
+
+
+}
+
+.header {
+    margin-left: 44px;
+}
+
+.main {
+    margin-top: 55px;
+    justify-content: center;
+    padding-left: 22px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -5px;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    /* margin-top: -30px; */
+}
+
+.newtxt {
+    color: rgb(141, 139, 139);
+
+}
+
+.cardImage {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-top: -24px;
+}
+
+.button {
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 900;
+    border-radius: 55px;
+    height: 44px;
+    box-shadow: 2px 8px 40px rgba(0, 0, 0, .08)
+}
+
+.button:hover {
+    background-color: rgb(212, 255, 248) !important;
+    color: rgb(0, 0, 0);
+}
+
+
+.righticon {
+    color: rgba(0, 0, 0, 0.493);
+    margin-left: 444px;
+    justify-content: space-between;
+}
+
+.lefticon {
+    color: rgba(0, 0, 0, 0.493);
+    margin-left: 14px;
+    justify-content: space-between;
+}

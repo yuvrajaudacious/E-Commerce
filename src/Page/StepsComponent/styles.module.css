@@ -1,0 +1,39 @@
+/* components/StepsComponent.module.css */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-image: url("https://ciseco-nextjs-ecommerce.vercel.app/_next/static/media/VectorHIW.be5444ab.svg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.imageContainer {
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 50%;
+    height: 50%;
+}
+
+.title {
+    color: #706c6c;
+    margin-bottom: 0;
+    border-radius: 55px;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin: 10px 0;
+    color: #333;
+}

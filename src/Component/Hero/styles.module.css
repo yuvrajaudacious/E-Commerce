@@ -1,0 +1,78 @@
+/* styles.module.css */
+.slider {
+    height: 100vh;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.textContainer {
+    flex: 1;
+    animation: slideInText 1s forwards;
+    font-size: 35px;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image {
+    width: 80%;
+    transition: transform 1s ease;
+}
+
+.zoom {
+    animation: zoomInOut 1s forwards;
+}
+
+@keyframes slideInText {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomInOut {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.exploreButton {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.exploreButton:hover {
+    background-color: #555;
+}
+
+.subtext {
+    margin: 10px 0;
+}
