@@ -6,6 +6,10 @@ import NewArrivals from "../NewArive";
 import { Divider } from "antd";
 import StepsComponent from "../StepsComponent";
 import Exploring from "../Exploring";
+import SpecialOffer from "../SpecialOffer";
+import ChosebyExperts from "../ChosenbyourExperts";
+import DontMiss from "../Don't missSpecialOffer";
+import BestSellers from "../BestSellers";
 
 const Home = () => {
   return (
@@ -13,11 +17,12 @@ const Home = () => {
       <Hero />
       <Category />
       <NewArrivals />
-      <Divider />
       <StepsComponent />
       <Exploring />
-
-      {/* <NavBar2 /> */}
+      <SpecialOffer />
+      <ChosebyExperts />
+      <DontMiss />
+      <BestSellers />
     </div>
   );
 };

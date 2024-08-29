@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 225px;
+    margin-top: 25px;
+    border-radius: 55px;
 }
 
 .logo {

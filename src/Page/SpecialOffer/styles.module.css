@@ -1,0 +1,57 @@
+.cardContainer {
+    padding: 24px;
+    max-width: 1000px;
+    margin: 24px auto;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/12/4d/e3/124de3d1b5e12f1d8fcec1685e634361.gif");
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    font-family: semibold;
+    height: 60vh;
+    box-shadow: 0 4px 6px  rgba(0, 0, 0, 0.1);
+
+}
+
+.image {
+    width: 102%;
+    border-radius: 16px;
+    margin-top: -115px;
+}
+
+
+.textContainer {
+    padding: 24px;
+    text-align: left;
+    font-family: semibold;
+
+
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 16px;
+}
+
+.title {
+    color: #1f1f1f;
+    font-size: 42px;
+
+}
+
+.description {
+    color: #595959;
+    margin-bottom: 24px;
+}
+
+.button {
+    background-color: #1f1f1f;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #3c3c3c;
+}

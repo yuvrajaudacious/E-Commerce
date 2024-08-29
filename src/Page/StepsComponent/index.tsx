@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button, Badge, Tag } from "antd";
+import { Row, Col, Button, Badge, Tag, Divider } from "antd";
 import styles from "./styles.module.css";
 
 const steps = [
@@ -34,25 +34,30 @@ const steps = [
 ];
 
 const StepsComponent: React.FC = () => (
-  <Row gutter={[16, 16]} justify="center" className={styles.container}>
-    {steps.map((step, index) => (
-      <Col key={index} xs={24} sm={12} md={6}>
-        <div className={styles.card}>
-          <div className={styles.imageContainer}>
-            <img src={step.image} alt={step.title} className={styles.image} />
+  <>
+    <Divider style={{ alignItems: "center" }} />
+
+    <Row gutter={[16, 16]} justify="center" className={styles.container}>
+      {steps.map((step, index) => (
+        <Col key={index} xs={24} sm={12} md={6}>
+          <div className={styles.card}>
+            <div className={styles.imageContainer}>
+              <img src={step.image} alt={step.title} className={styles.image} />
+            </div>
+            <Tag
+              className={styles.title}
+              style={{ backgroundColor: step.titleBackgroundColor }}
+            >
+              Step {index + 1}
+            </Tag>
+            <h4 className={styles.subtitle}>{step.title}</h4>
+            <p>{step.description}</p>
           </div>
-          <Tag
-            className={styles.title}
-            style={{ backgroundColor: step.titleBackgroundColor }}
-          >
-            Step {index + 1}
-          </Tag>
-          <h4 className={styles.subtitle}>{step.title}</h4>
-          <p>{step.description}</p>
-        </div>
-      </Col>
-    ))}
-  </Row>
+        </Col>
+      ))}
+    </Row>
+    <Divider />
+  </>
 );
 
 export default StepsComponent;

@@ -1,0 +1,62 @@
+.main {
+    padding: 40px;
+    margin-left: 20px;
+    background-color: rgb(244, 250, 250);
+    border-radius: 20px;
+}
+
+.headerText {
+    margin-bottom: 44px;
+}
+
+.text {
+    color: rgb(0, 190, 0);
+}
+
+.productCard {
+    position: relative;
+    justify-content: space-between;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.productHoverDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover .productHoverDetails {
+    opacity: 1;
+}
+
+.detailsContent {
+    text-align: center;
+    color: #000;
+}
+
+.colorCircle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 4px;
+}

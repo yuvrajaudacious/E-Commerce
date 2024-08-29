@@ -1,39 +1,46 @@
-"use client";
-import { Button, Menu } from "antd";
-import {
-  ShoppingCartOutlined,
-  UserOutlined,
-  SearchOutlined,
-} from "@ant-design/icons";
-import styles from "./styles.module.css";
+"use client"
+import { Menu, Input, Badge, Button } from 'antd';
+import { SearchOutlined, HeartOutlined, ShoppingCartOutlined } from '@ant-design/icons';
+import styles from './styles.module.css';
+
+const { SubMenu } = Menu;
 
 const Header: React.FC = () => {
   return (
-    <div className={styles.header}>
-      <div className={styles.logo}>Logo.</div>
-      <Menu mode="horizontal" className={styles.menu}>
-        <Menu.Item key="men">Men</Menu.Item>
-        <Menu.Item key="women">Women</Menu.Item>
-        <Menu.Item key="beauty">Beauty</Menu.Item>
-        <Menu.Item key="sport">Sport</Menu.Item>
-        <Menu.SubMenu key="templates" title="Templates">
-          <Menu.Item key="template1">Template 1</Menu.Item>
-          <Menu.Item key="template2">Template 2</Menu.Item>
-        </Menu.SubMenu>
-        <Menu.SubMenu key="explore" title="Explore">
-          <Menu.Item key="explore1">Explore 1</Menu.Item>
-          <Menu.Item key="explore2">Explore 2</Menu.Item>
-        </Menu.SubMenu>
-      </Menu>
-      <div className={styles.icons}>
-        <SearchOutlined className={styles.icon} />
-        <UserOutlined className={styles.icon} />
-        <div className={styles.cart}>
-          <ShoppingCartOutlined className={styles.icon} />
-          <span className={styles.badge}>3</span>
-        </div>
+    <div className={styles.headerContainer}>
+      <div className={styles.logo}>
+        <span>Estore</span>
       </div>
-      <Button className={styles.cabutton}>Create Account</Button>
+      <Menu mode="horizontal" className={styles.menu}>
+        <Menu.Item key="home">Home</Menu.Item>
+        <Menu.Item key="category">Category</Menu.Item>
+        <Menu.Item key="latest">
+          <Badge count="HOT" style={{ backgroundColor: '#f5222d' }}>
+            Latest
+          </Badge>
+        </Menu.Item>
+        <Menu.Item key="blog">Blog</Menu.Item>
+        <Menu.Item key="pages">Pages</Menu.Item>
+        <Menu.Item key="contact">Contact</Menu.Item>
+      </Menu>
+      <div className={styles.search}>
+        <Input
+          placeholder="Search products"
+          prefix={<SearchOutlined />}
+          className={styles.searchInput}
+        />
+      </div>
+      <div className={styles.icons}>
+        <Badge count={2}>
+          <HeartOutlined className={styles.icon} />
+        </Badge>
+        <Badge count={2}>
+          <ShoppingCartOutlined className={styles.icon} />
+        </Badge>
+      </div>
+      <Button type="primary" className={styles.signInButton}>
+        Sign In
+      </Button>
     </div>
   );
 };

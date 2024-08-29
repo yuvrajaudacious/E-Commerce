@@ -1,51 +1,49 @@
-.header {
+/* components/Header.module.css */
+.headerContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #e8e8e8;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  .logo {
     font-size: 24px;
     font-weight: bold;
-}
-
-.menu {
-    flex: 1;
+  }
+  
+  .logo span {
+    color: #000;
+  }
+  
+  .menu {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .search {
+    flex-grow: 1;
     display: flex;
-    justify-content: flex-start;
-}
-
-.icons {
+    justify-content: center;
+  }
+  
+  .searchInput {
+    width: 300px;
+  }
+  
+  .icons {
     display: flex;
     align-items: center;
-}
-
-.icon {
+    margin-right: 20px;
+  }
+  
+  .icon {
     font-size: 20px;
     margin-right: 20px;
-}
-
-.cart {
-    position: relative;
-}
-
-.badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: #1890ff;
-    color: #fff;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
-}
-
-.cabutton {
-    margin-left: 20px;
-}
+  }
+  
+  .signInButton {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+  }
+  

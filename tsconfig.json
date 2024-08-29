@@ -28,6 +28,6 @@
     ".next/types/**/*.ts",
     "src/app/Lib/Db/db.js",
     "src/app/Lib/modal/Product/index.js"
-, "src/app/api/product/route.js"  ],
+, "src/app/api/Product/route.js"  ],
   "exclude": ["node_modules"]
 }

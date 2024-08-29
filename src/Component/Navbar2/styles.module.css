@@ -3,7 +3,7 @@
     justify-content: center;
     background-color: #ffffff;
     padding: 10px 0;
-    width: 70%;
+    width: 60%;
     height: 55px;
     border-radius: 55px;
     margin-top: 250px;
@@ -37,3 +37,15 @@
 .menuItem.ant-menu-item-selected .anticon {
     color: #fff;
 }
+
+.ant-menu-submenu-selected {
+    color: white;
+    background-color: black;
+    border-radius: 22px;
+}
+
+/* li.ant-menu-overflow-item.ant-menu-item.ant-menu-item-selected.styles_menuItem__tGKJ1 {
+    background-color: black;
+    border-radius: 21px;
+    color: white;
+} */

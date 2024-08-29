@@ -1,0 +1,74 @@
+/* components/Footer.module.css */
+.footer {
+    background-color: #f6ffff;
+    color: #fff;
+    padding: 40px 80px;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.aboutText {
+    color: #aaa;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+}
+
+.linkList li {
+    margin-bottom: 8px;
+}
+
+.linkList a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.linkList a:hover {
+    color: #000000;
+}
+
+.contactInfo {
+    color: #aaa;
+}
+
+.contactInfo a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.contactInfo a:hover {
+    color: #fff;
+}
+
+.socialIcons {
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #aaa;
+}
+
+.icon:hover {
+    color: #1890ff;
+}
+
+.copyright {
+    margin-top: 40px;
+    text-align: center;
+    color: #aaa;
+}
+
+.copyright a {
+    color: #1890ff;
+    text-decoration: none;
+}
